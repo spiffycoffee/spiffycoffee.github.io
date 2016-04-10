@@ -1,0 +1,34 @@
+# Permalinks
+permalink:           pretty
+
+# Setup
+title:               SpiffyCoffee.com
+tagline:             Hello! 
+description:         >
+  A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a>
+  theme that pairs a prominent sidebar with uncomplicated content.
+  Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.
+url:                 http://hyde.getpoole.com
+paginate:            5
+paginate_path:       "/blog/page:num/" 
+baseurl:             ""
+
+# Assets
+sass:
+  style:            :compressed
+
+# About/contact
+author:
+  name:              Mark Otto
+  url:               https://twitter.com/mdo
+  email:             markdotto@gmail.com
+
+# Custom vars
+version:             2.1.0
+github:
+  repo:              https://github.com/poole/hyde
+
+# Gems
+gems:
+  - jekyll-paginate
+  - jekyll-gist
