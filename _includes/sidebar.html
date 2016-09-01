@@ -7,9 +7,9 @@
     </div>
 
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == homeurl %} active{% endif %}" href="{{ homeurl }}">Home</a>
 
       {% comment %}
+      <a class="sidebar-nav-item{% if page.url == homeurl %} active{% endif %}" href="{{ homeurl }}">Home</a>
         The code below dynamically generates a sidebar nav of pages with
         `layout: page` in the front-matter. See readme for usage.
       {% endcomment %}
@@ -20,11 +20,12 @@
         {% endif %}
       {% endfor %}
 
-      <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
     </nav>
 
-    <small>
-      &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved.
-    </small>
+	<a href="https://www.github.com/spiffycoffee"><img src="/assets/GitHub-Mark-Light-32px.png" /></a>
+
+    <div class="copyright">
+		&copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time> Philip Xie<br />
+    </div>
   </div>
 </aside>

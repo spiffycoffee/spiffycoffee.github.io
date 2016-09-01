@@ -41,3 +41,9 @@ validation-report.json
 node_modules
 .sass-cache
 .jekyll-metadata
+
+# Vagrant
+.vagrant
+Vagrantfile
+VirtualBox*
+*.cab

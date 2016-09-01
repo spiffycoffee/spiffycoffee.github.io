@@ -2,16 +2,26 @@
 permalink:           pretty
 
 # Setup
-title:               SpiffyCoffee.com
+title:               SpiffyCoffee
 tagline:             Hello! 
 description:         >
-  A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a>
-  theme that pairs a prominent sidebar with uncomplicated content.
-  Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.
-url:                 http://hyde.getpoole.com
+    # floating in the ethernet 
+url:                 http://www.spiffycoffee.com
 paginate:            5
 paginate_path:       "/blog/page:num/" 
 baseurl:             ""
+
+# Photo gallery
+collections:
+  photography:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: photography
+    values:
+      layout: photo
 
 # Assets
 sass:
@@ -19,9 +29,9 @@ sass:
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Philip Xie 
+  url:               https://twitter.com/spiffycoffee
+  email:             philip@spiffycoffee.com
 
 # Custom vars
 version:             2.1.0

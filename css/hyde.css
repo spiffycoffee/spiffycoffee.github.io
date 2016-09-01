@@ -16,6 +16,7 @@
 
 /*
  * Contents
+ * some more things
  *
  * Global resets
  * Sidebar
@@ -47,6 +48,44 @@ html {
 
 
 /*
+ * Photo grid 
+ *
+ * Styles for a grid of images with a solid border
+ */
+#photo-grid {
+	padding-left: 0;
+	margin-left: 0;
+	list-style-type: none;
+	margin: auto;
+	text-align: center;
+}
+#photo-grid li {
+	display: inline-block;
+	padding: 0.3em;
+}
+@media (min-width: 70em) {
+	#photo-grid li {
+		width: 32%
+	}
+}
+
+#photo-grid a {
+	text-decoration: none;
+}
+
+#photo-grid img:hover {
+	border: 2px solid black;
+}
+
+#photo-grid img {
+	border: 2px solid #fff;
+	margin: 2px;
+	display: inline;
+	margin-right: 30px;
+	vertical-align: middle;
+}
+
+/*
  * Sidebar
  *
  * Flexible banner for housing site name, intro, and "footer" content. Starts
@@ -65,7 +104,7 @@ html {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 18rem;
+    width: 15rem;
     text-align: left;
   }
 }
@@ -79,8 +118,16 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
-  font-size: 3.25rem;
+  font-family: 'Waiting for the Sunrise',cursive;
+  font-size: 2.66rem;
+}
+
+/* About sub-header */
+.lead {
+  color: #505050;
+  font-size: 0.75rem;
+  font-family: 'Consolas', serif;
+  margin-top: -0.75rem;
 }
 
 /* Sidebar nav */
@@ -89,7 +136,7 @@ html {
 }
 .sidebar-nav-item {
   display: block;
-  line-height: 1.75;
+  line-height: 1.5;
 }
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
@@ -99,6 +146,9 @@ a.sidebar-nav-item:focus {
   font-weight: bold;
 }
 
+.copyright {
+	font-size:0.6rem;
+}
 /* Sticky sidebar
  *
  * Add the `sidebar-sticky` class to the sidebar's container to affix it the
@@ -108,9 +158,9 @@ a.sidebar-nav-item:focus {
 @media (min-width: 48em) {
   .sidebar-sticky {
     position: absolute;
-    right:  1rem;
+    right:  0rem;
     bottom: 1rem;
-    left:   1rem;
+    left:   0rem;
   }
 }
 
@@ -141,7 +191,7 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 64em) {
   .content {
-    margin-left: 22rem;
+    margin-left: 20rem;
     margin-right: 4rem;
   }
 }
