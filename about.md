@@ -3,6 +3,6 @@ layout: page
 title: About
 ---
 
-Hi! I'm Philip Xie, I write software.
+Hi! I'm Philip Xie, I write software and unhelpfully short about me blurbs.
 
-You can hit me up at <{{ site.author.email }}>
+Drop me a line at <{{ site.author.email }}>
